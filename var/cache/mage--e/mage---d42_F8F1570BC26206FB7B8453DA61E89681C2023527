@@ -1,0 +1,51 @@
+<div class="nav-container">
+    <ul id="nav">
+        <li  class="level0 nav-1 first level-top"><a href="http://localhost/car/index.php/bmw.html"  class="level-top" ><span>BMW</span></a></li><li  class="level0 nav-2 level-top"><a href="http://localhost/car/index.php/toyota.html"  class="level-top" ><span>Toyota</span></a></li><li  class="level0 nav-3 level-top"><a href="http://localhost/car/index.php/bedroom.html"  class="level-top" ><span>Bedroom</span></a></li><li  class="level0 nav-4 level-top"><a href="http://localhost/car/index.php/chery.html"  class="level-top" ><span>Chery</span></a></li><li  class="level0 nav-5 level-top"><a href="http://localhost/car/index.php/ford.html"  class="level-top" ><span>Ford</span></a></li><li  class="level0 nav-6 level-top"><a href="http://localhost/car/index.php/diahatsu.html"  class="level-top" ><span>Diahatsu</span></a></li><li  class="level0 nav-7 level-top"><a href="http://localhost/car/index.php/honda.html"  class="level-top" ><span>Honda</span></a></li><li  class="level0 nav-8 level-top parent"><a href="http://localhost/car/index.php/mitsubishi.html"  class="level-top" ><span>Mitsubishi</span></a><ul class="level0"><li  class="level1 nav-8-1 first"><a href="http://localhost/car/index.php/mitsubishi/shirts.html" ><span>Shirts</span></a></li><li  class="level1 nav-8-2 parent"><a href="http://localhost/car/index.php/mitsubishi/shoes.html" ><span>Shoes</span></a><ul class="level1"><li  class="level2 nav-8-2-1 first"><a href="http://localhost/car/index.php/mitsubishi/shoes/mens.html" ><span>Mens</span></a></li><li  class="level2 nav-8-2-2 last"><a href="http://localhost/car/index.php/mitsubishi/shoes/womens.html" ><span>Womens</span></a></li></ul></li><li  class="level1 nav-8-3"><a href="http://localhost/car/index.php/mitsubishi/hoodies.html" ><span>Hoodies</span></a></li><li  class="level1 nav-8-4 last"><a href="http://localhost/car/index.php/mitsubishi/pants.html" ><span>Pants</span></a></li></ul></li><li  class="level0 nav-9 level-top"><a href="http://localhost/car/index.php/volvo.html"  class="level-top" ><span>Volvo</span></a></li><li  class="level0 nav-10 level-top"><a href="http://localhost/car/index.php/nissan.html"  class="level-top" ><span>Nissan</span></a></li><li  class="level0 nav-11 level-top"><a href="http://localhost/car/index.php/suzuki.html"  class="level-top" ><span>Suzuki</span></a></li><li  class="level0 nav-12 level-top"><a href="http://localhost/car/index.php/subaru.html"  class="level-top" ><span>Subaru</span></a></li><li  class="level0 nav-13 level-top"><a href="http://localhost/car/index.php/lixus.html"  class="level-top" ><span>Lixus</span></a></li><li  class="level0 nav-14 last level-top"><a href="http://localhost/car/index.php/mazda.html"  class="level-top" ><span>Mazda</span></a></li>    </ul>
+</div>
+<script type="text/javascript"> 
+jQuery(window).bind('load', function() {
+	isMobile = /iPhone|iPod|Phone|Android|hpwos/i.test(navigator.userAgent);
+	isMobileView = jQuery('body').hasClass('adapt-0');
+	if(isMobile){
+		var lis=$$('#nav li.parent');
+		console.log(lis);
+		lis.each(function(li) {
+		 var dt = new Element('dt');
+		 var dd = new Element('dd');
+		 var a = li.down(0);
+		 var ul = li.down(2);
+		 dt.insert(a);
+		 dd.insert(ul);
+		 dt.insert("<span class='nav'>nav</span>");
+		 li.insert(dt,{position:top});
+		 li.insert(dd);
+		});
+		jQuery('#nav li.parent dd ul ').hide();
+		jQuery('#nav dt span.nav').click(function()  {
+	        jQuery('.td_active').removeClass('td_active');
+	        var node = jQuery(this).parent().next().find('ul').first();
+	        var i = (node.css('display')=="block");
+			var string = jQuery(this).parent().parent().parent().parent().parent().attr('class');
+			if(string.indexOf('parent')!=-1)
+			{
+				jQuery(this).parent().parent().parent().parent().parent().addClass('td_active');
+				jQuery(this).parent().parent().parent().css("display","block");
+				jQuery(this).parent().parent().find('ul').slideUp('500');
+			}
+			else
+			{
+				jQuery('#nav li.parent dd ul:visible').slideUp('500');
+			}
+	        jQuery(this).parent().parent().addClass('td_active');    
+	        if (i != true) 	
+	        {
+	        	jQuery(this).parent().next().find('ul').first().slideDown('500');
+	        }
+	        return false;
+	    });
+	}
+	else{
+	    fixMenuDefault();
+	}
+});
+</script>

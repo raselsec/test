@@ -1,0 +1,56 @@
+<div class="box1">
+		  
+		<div class="widget-title">
+			<h2><span>BMW Car</span></h2>
+		</div>
+		
+		
+	<div class="widget em-widget-featured-products-grid">
+				<div class="widget-products">
+														<ul class="products-grid">
+										<li class="item first last"
+						style="  ">
+						
+													<a href="http://localhost/car/index.php/bmw2.html" title="BMW " class="product-image">
+																	<!--show label product - label extension is required-->
+																									<img src="http://localhost/car/media/catalog/product/cache/1/small_image/238x238/9df78eab33525d08d6e5fb8d27136e95/c/a/car_10.jpg" width="238" height="238" 
+					            rel="thumbnail" 
+					            data-alt-src="http://localhost/car/media/catalog/product/cache/1/thumbnail/238x238/9df78eab33525d08d6e5fb8d27136e95/c/a/car_10.jpg"
+					             alt="BMW " />
+							</a>
+												
+						<div class="product-shop">
+							<div class="f-fix">
+								<!--product name-->
+																	<h3 class="product-name"><a href="http://localhost/car/index.php/bmw2.html" title="BMW ">BMW </a></h3>
+																<p class="sku">bmw2</p>
+								<!--product description-->
+																
+								<!--product reviews-->
+																																	
+								<!--product price-->
+																	
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-168-widget-new-list">
+                                            <span class="price">Tk1,200,000.00</span>                                    </span>
+                        
+        </div>
+
+																
+								<!--product add to cart-->
+																
+								<!--product add to compare-wishlist-->
+																
+							</div>
+						</div>
+					</li>
+										</ul>
+																		</div>
+				<div class="desc"><a class="free-ship" href="#">Free shipping and returns</a></div>
+		</div>
+</div>
+<script type="text/javascript">
+	decorateGeneric($$('ul.products-grid'),['last','first','odd','even']);
+</script>

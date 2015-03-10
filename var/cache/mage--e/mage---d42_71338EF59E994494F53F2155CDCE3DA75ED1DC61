@@ -1,0 +1,35 @@
+
+    <div class="widget widget-static-block footer-information">
+    	    	<div class="footer-row2-area">
+<div class="grid_4 hide-lte0 alpha">
+<p class="h5">Top 5 Brand</p>
+<ul>
+<li><a href="#">BMW</a></li>
+<li><a href="#">Toyota</a></li>
+<li><a href="#">Mitsubishi</a></li>
+<li><a href="#">Volvo</a></li>
+<li><a href="#">Suzuki</a></li>
+</ul>
+</div>
+<div class="grid_4 hide-lte0">
+<p class="h5">Top 5 Model</p>
+<ul>
+<li><a href="#">BMW</a></li>
+<li><a href="#">Toyota</a></li>
+<li><a href="#">Mitsubishi</a></li>
+<li><a href="#">Volvo</a></li>
+<li><a href="#">Suzuki</a></li>
+</ul>
+</div>
+<div class="grid_4">
+<p class="h5">Customer services</p>
+<ul>
+<li><a href="http://localhost/car/index.php/contacts">Contact us</a></li>
+<li><a href="#">About us</a></li>
+<li><a href="#">Privacy & Policy</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">How to buy car</a></li>
+</ul>
+</div>
+</div>    </div>
+

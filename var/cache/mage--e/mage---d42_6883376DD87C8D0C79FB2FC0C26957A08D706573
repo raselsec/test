@@ -1,0 +1,109 @@
+<div class="box">
+		  
+		<div class="widget-title">
+			<h2><span>New Products</span></h2>
+		</div>
+		
+			
+			<div class="widget em-widget-new-products-grid">
+			<div class="widget-products">
+														<ul class="products-grid">
+										<li class="item first"
+						style="width:157px; height:265px; margin-right:60px;margin-bottom:60px;">
+						
+													<a href="http://localhost/car/index.php/microsoft-wireless-optical-mouse-5000.html" title="Car " class="product-image">
+																	<!--show label product - label extension is required-->
+									<ul class="productlabels_icons">
+            <li class="label " >
+                        <p>
+                        New        </p>
+    </li>
+    </ul>																<img src="http://localhost/car/media/catalog/product/cache/1/small_image/157x157/9df78eab33525d08d6e5fb8d27136e95/c/a/car_3.jpg" width="157" height="157"  
+					            rel="thumbnail" 
+					            data-alt-src="http://localhost/car/media/catalog/product/cache/1/thumbnail/157x157/9df78eab33525d08d6e5fb8d27136e95/c/a/car_3.jpg"
+					             alt="Car " />
+							</a>
+												
+						<div class="product-shop">
+							<div class="f-fix">
+								<!--product name-->
+																	<h3 class="product-name"><a href="http://localhost/car/index.php/microsoft-wireless-optical-mouse-5000.html" title="Car ">Car </a></h3>
+																<p class="sku">car_2</p>
+								<!--product description-->
+																
+								<!--product reviews-->
+																																	
+								<!--product price-->
+																	
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-160-widget-new-list">
+                                            <span class="price">Tk1,000,000.00</span>                                    </span>
+                        
+        </div>
+
+																
+								<!--product add to cart-->
+																
+								<!--product add to compare-wishlist-->
+																	<ul class="add-to-links">
+																															<li><span class="separator">|</span> <a href="http://localhost/car/index.php/catalog/product_compare/add/product/160/uenc/aHR0cDovL2xvY2FsaG9zdC9jYXIv/form_key/jjyOWEeSPN91Rr13/" class="link-compare" title="Compare">Compare</a></li>
+																			</ul>
+																
+							</div>
+						</div>
+					</li>
+																													<li class="item last"
+						style="width:157px; height:265px; margin-right:60px;margin-bottom:60px;">
+						
+													<a href="http://localhost/car/index.php/car-3.html" title="Car 3" class="product-image">
+																	<!--show label product - label extension is required-->
+									<ul class="productlabels_icons">
+            <li class="label " >
+                        <p>
+                        New        </p>
+    </li>
+    </ul>																<img src="http://localhost/car/media/catalog/product/cache/1/small_image/157x157/9df78eab33525d08d6e5fb8d27136e95/c/a/car_12.jpg" width="157" height="157"  
+					            rel="thumbnail" 
+					            data-alt-src="http://localhost/car/media/catalog/product/cache/1/thumbnail/157x157/9df78eab33525d08d6e5fb8d27136e95/c/a/car_12.jpg"
+					             alt="Car 3" />
+							</a>
+												
+						<div class="product-shop">
+							<div class="f-fix">
+								<!--product name-->
+																	<h3 class="product-name"><a href="http://localhost/car/index.php/car-3.html" title="Car 3">Car 3</a></h3>
+																<p class="sku">car3</p>
+								<!--product description-->
+																
+								<!--product reviews-->
+																																	
+								<!--product price-->
+																	
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-139-widget-new-list">
+                                            <span class="price">Tk500,000.00</span>                                    </span>
+                        
+        </div>
+
+																
+								<!--product add to cart-->
+																
+								<!--product add to compare-wishlist-->
+																	<ul class="add-to-links">
+																															<li><span class="separator">|</span> <a href="http://localhost/car/index.php/catalog/product_compare/add/product/139/uenc/aHR0cDovL2xvY2FsaG9zdC9jYXIv/form_key/jjyOWEeSPN91Rr13/" class="link-compare" title="Compare">Compare</a></li>
+																			</ul>
+																
+							</div>
+						</div>
+					</li>
+										</ul>
+																		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	decorateGeneric($$('ul.products-grid'),['last','first','odd','even']);
+</script>

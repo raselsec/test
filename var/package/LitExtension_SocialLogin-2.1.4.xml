@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package>
+    <name>LitExtension_SocialLogin</name>
+    <version>2.1.4</version>
+    <stability>stable</stability>
+    <license>EULA</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Social Login allow customers to use their social account to gain access to your site instantly, supports Facebook, Twitter, Yahoo, Google+, Linkedin.</summary>
+    <description>Social Login allow customers to use their social account to gain access to your site instantly, supports Facebook, Twitter, Yahoo, Google+, Linkedin.</description>
+    <notes>version 2.1.4&#xD;
+- Fix yahoo login issue.&#xD;
+&#xD;
+version 2.1.3&#xD;
+- Fix a bug on https login&#xD;
+&#xD;
+version 2.1.2&#xD;
+- Fix bug while mysql setup can not run in some hosting.&#xD;
+&#xD;
+version 2.1.1&#xD;
+- Fix error when SSL enabled in Login page.&#xD;
+&#xD;
+version 2.0.1&#xD;
+- fix issue not able to do normal login in magento 1.8.1.0&#xD;
+&#xD;
+version 2.0.0&#xD;
+- add Social Login in Checkout and ability to select more positions.&#xD;
+&#xD;
+version 1.1.0&#xD;
+- added the ability to select Social Buttons in the Login Page</notes>
+    <authors><author><name>LitExtension</name><user>litextension</user><email>litextension@gmail.com</email></author></authors>
+    <date>2014-05-30</date>
+    <time>05:45:49</time>
+    <contents><target name="magecommunity"><dir name="LitExtension"><dir name="SocialLogin"><dir name="Block"><dir name="Button"><dir name="Type"><file name="Facebook.php" hash="529f990bd1cd94ec9a6f3261489eb134"/><file name="Google.php" hash="de142be218258872ea0b0b1ca9196165"/><file name="Linkedin.php" hash="c0bc2b5c25ee2cb77eb34cfe65e6e03c"/><file name="Twitter.php" hash="c9f1e84e66c1f5dff4676819545b91da"/><file name="Yahoo.php" hash="ff3d1dc45465929653f5e42f1058a85c"/></dir><file name="Type.php" hash="df8f696930b15957cab8848942fc129c"/></dir><file name="Button.php" hash="e4ade49e6801c7f94b23db60f8f6e4dc"/></dir><dir name="Helper"><file name="Data.php" hash="6cd32b240debf2a1017c3b1ee9a28627"/><file name="Facebook.php" hash="ce1406d680981d512483fa175f8bbafb"/><file name="Google.php" hash="19ea7fb07f1dbc17a40da74795789984"/><file name="Linkedin.php" hash="508bef34c85a2da50ca84a12645b1c05"/><file name="Twitter.php" hash="ddf33a506436e45defbcca99d590cf3b"/><file name="Yahoo.php" hash="b691fb94025048428358adc6d05409bd"/></dir><dir name="Model"><dir name="Facebook"><file name="Client.php" hash="aa2dd6fd43b1e3bab7dd666fd87aa0e7"/></dir><dir name="Google"><file name="Client.php" hash="7696b8b19e077523b7a92b014bdadefe"/></dir><dir name="Linkedin"><file name="Client.php" hash="6a516073dbf0f1bbffdca79361a7fcf7"/></dir><dir name="System"><dir name="Config"><dir name="Source"><file name="Position.php" hash="6bb6591311163859f08c6162e54f5d0e"/><file name="Postcheckout.php" hash="308ca3c8ca14d02c6521389f13e074f9"/></dir></dir></dir><dir name="Twitter"><file name="Client.php" hash="41497fc3593a4233de6eaf063f6cd28e"/></dir><dir name="Yahoo"><file name="Client.php" hash="08e1fb7a3c7fe8c7faf2dacabe911471"/></dir></dir><dir name="controllers"><file name="FacebookController.php" hash="7e969e3d7f77cc31e4c7dfb21c8dd3ed"/><file name="FixController.php" hash="b314b1deacf117093922dc9fed827e56"/><file name="GoogleController.php" hash="9e0d81d740b0dd464b5d22d54b3ab05c"/><file name="LinkedinController.php" hash="598c1c2342a2e25c0d0666d37810895a"/><file name="TwitterController.php" hash="7082195bb475bc91a5d90b1b9d5c737b"/><file name="YahooController.php" hash="a6e8367399dd55e5880ef84401077ecf"/></dir><dir name="etc"><file name="adminhtml.xml" hash="52bfd9bdf3ef87990e55c2e459f95215"/><file name="config.xml" hash="51c0e166ab38be23acfe1cc1d9091f9d"/><file name="system.xml" hash="0293c5b4daffd70ded2334f152135928"/></dir><dir name="sql"><dir name="sociallogin_setup"><file name="mysql4-install-1.0.0.php" hash="6af7f88e4def92b74e5b7cbe56a80309"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="le_sociallogin.xml" hash="979871d02a887e3b73cb6b62c88aa502"/></dir><dir name="template"><dir name="le_sociallogin"><dir name="button"><file name="type.phtml" hash="1ad9953df95c696c8fef7ee2623693f7"/></dir><file name="button.phtml" hash="f2f9f144707b1ea8fc801632ceb0dc66"/><dir name="form"><file name="login.phtml" hash="ee369ac1983833f3726b2c9871e667a8"/><file name="onepage.phtml" hash="2e934cd91c3b863bc2b27ff2bd0345c0"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="LitExtension_SocialLogin.xml" hash="88a3f4b9251e46d5102141b99f314aa1"/></dir></target><target name="magelocale"><dir name="en_US"><file name="LitExtension_SocialLogin.csv" hash="e0444d150ce8f0e3aaf0fcdb582ead0e"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="le_sociallogin"><dir name="css"><file name="style.css" hash="93745aeab88ab3a6c9deb1d7f41e6cc6"/></dir><dir name="images"><file name="facebook_icon.png" hash="062b73784feea67df90a645b925fbe8d"/><file name="google_plus_icon.png" hash="056fe01c8058938acc6eb4660603dfc0"/><file name="linkdin_icon.png" hash="8766f2fcd6d1f5909b3f237825deb5a6"/><file name="twitter_icon.png" hash="f1dc9f38454b683332a5613888c42ebd"/><file name="yahoo_icon.png" hash="c10dbb582a37e0bf15370ffae499a61d"/></dir><dir name="js"><file name="sociallogin.js" hash="c7db008d81409fe9957090c5943b88f9"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

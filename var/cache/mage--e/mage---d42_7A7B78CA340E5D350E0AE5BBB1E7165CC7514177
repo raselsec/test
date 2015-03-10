@@ -1,0 +1,93 @@
+<div class="box-top">
+		  
+		<div class="widget-title">
+			<h2><span>Volvo</span></h2>
+		</div>
+		
+		
+	<div class="widget em-widget-featured-products-grid">
+				<div class="widget-products">
+														<ul class="products-grid">
+										<li class="item first"
+						style="  ">
+						
+													<a href="http://localhost/car/index.php/volvo-class-one-car.html" title="Volvo Class one car" class="product-image">
+																	<!--show label product - label extension is required-->
+																									<img src="http://localhost/car/media/catalog/product/cache/1/small_image/157x157/9df78eab33525d08d6e5fb8d27136e95/l/e/lexus-is-f-ccs-r-race-car-2012_001782.jpg" width="157" height="157" 
+					            rel="thumbnail" 
+					            data-alt-src="http://localhost/car/media/catalog/product/cache/1/thumbnail/157x157/9df78eab33525d08d6e5fb8d27136e95/l/e/lexus-is-f-ccs-r-race-car-2012_001782.jpg"
+					             alt="Volvo Class one car" />
+							</a>
+												
+						<div class="product-shop">
+							<div class="f-fix">
+								<!--product name-->
+																	<h3 class="product-name"><a href="http://localhost/car/index.php/volvo-class-one-car.html" title="Volvo Class one car">Volvo Class one car</a></h3>
+																<p class="sku">volvo_class_one</p>
+								<!--product description-->
+																
+								<!--product reviews-->
+																																	
+								<!--product price-->
+																	
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-180-widget-new-list">
+                                            <span class="price">Tk2,500,000.00</span>                                    </span>
+                        
+        </div>
+
+																
+								<!--product add to cart-->
+																
+								<!--product add to compare-wishlist-->
+																
+							</div>
+						</div>
+					</li>
+																													<li class="item last"
+						style="  ">
+						
+													<a href="http://localhost/car/index.php/volvo-s40.html" title="Volvo S40 " class="product-image">
+																	<!--show label product - label extension is required-->
+																									<img src="http://localhost/car/media/catalog/product/cache/1/small_image/157x157/9df78eab33525d08d6e5fb8d27136e95/i/n/intro.jpg" width="157" height="157" 
+					            rel="thumbnail" 
+					            data-alt-src="http://localhost/car/media/catalog/product/cache/1/thumbnail/157x157/9df78eab33525d08d6e5fb8d27136e95/i/n/intro.jpg"
+					             alt="Volvo S40 " />
+							</a>
+												
+						<div class="product-shop">
+							<div class="f-fix">
+								<!--product name-->
+																	<h3 class="product-name"><a href="http://localhost/car/index.php/volvo-s40.html" title="Volvo S40 ">Volvo S40 </a></h3>
+																<p class="sku">volvo-s40</p>
+								<!--product description-->
+																
+								<!--product reviews-->
+																																	
+								<!--product price-->
+																	
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-181-widget-new-list">
+                                            <span class="price">Tk1,200,000.00</span>                                    </span>
+                        
+        </div>
+
+																
+								<!--product add to cart-->
+																
+								<!--product add to compare-wishlist-->
+																
+							</div>
+						</div>
+					</li>
+										</ul>
+																		</div>
+			</div>
+</div>
+<script type="text/javascript">
+	decorateGeneric($$('ul.products-grid'),['last','first','odd','even']);
+</script>

@@ -1,0 +1,1459 @@
+<block name="formkey" type="core/template" template="core/formkey.phtml"/>
+<label>All Pages</label>
+<block type="page/html" name="root" output="toHtml" template="page/3columns.phtml">
+   <block type="page/html_head" name="head" as="head">
+      <action method="addJs">
+         <script>prototype/prototype.js</script>
+      </action>
+      <action method="addJs">
+         <script>lib/ccard.js</script>
+      </action>
+      <action method="addJs">
+         <script>prototype/validation.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/builder.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/effects.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/dragdrop.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/controls.js</script>
+      </action>
+      <action method="addJs">
+         <script>scriptaculous/slider.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/js.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/form.js</script>
+      </action>
+      <action method="addJs">
+         <script>varien/menu.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/translate.js</script>
+      </action>
+      <action method="addJs">
+         <script>mage/cookies.js</script>
+      </action>
+      <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
+      <action method="addJs">
+         <script>em/jquery-1.8.3.min.js</script>
+      </action>
+      <action method="addJs">
+         <script>em/jquery.hoverIntent.js</script>
+      </action>
+      <action method="addJs">
+         <script>em/cloud-zoom.1.0.2.js</script>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/colorpicker.js</name>
+         <params/>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/ios-orientationchange-fix.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/variation.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/selectUl.js</name>
+         <params/>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/galaelectronues.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/adapt.js</name>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/styles.css</stylesheet>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/styles-ie.css</name>
+         <params/>
+         <if>lt IE 8</if>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/js-video.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/widgets.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/print.css</stylesheet>
+         <params>media=&quot;print&quot;</params>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/em_cloudzoom.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/em_variation.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/selectUl.css</stylesheet>
+      </action>
+      <action method="addCss">
+         <stylesheet>css/em_quickshop.css</stylesheet>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>sliderwidget/jcarousel.css</name>
+         <params>--data-em=&quot;1&quot;</params>
+      </action>
+      <action method="addCss">
+         <name>slideshowwidget/css/nivo.css</name>
+      </action>
+      <action method="addItem">
+         <type>js</type>
+         <name>lib/ds-sleight.js</name>
+         <params/>
+         <if>lt IE 7</if>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/ie6.js</name>
+         <params/>
+         <if>lt IE 7</if>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>js/lightbox.js</name>
+      </action>
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>css/lightbox.css</name>
+      </action>
+      <block type="core/template" name="em_variation_css" template="page/html/em_head.phtml"/>
+   </block>
+   <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
+      <label>Page Top</label>
+   </block>
+   <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml"/>
+   <block type="page/html_header" name="header" as="header">
+      <block type="page/template_links" name="top.links" as="topLinks"/>
+      <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
+      <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
+         <label>Page Header</label>
+         <action method="setElementClass">
+            <value>top-container</value>
+         </action>
+      </block>
+      <block type="page/html_welcome" name="welcome" as="welcome"/>
+   </block>
+   <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs" translate="label">
+      <label>Breadcrumbs</label>
+   </block>
+   <block type="core/text_list" name="left" as="left" translate="label">
+      <label>Left Column</label>
+   </block>
+   <block type="core/messages" name="global_messages" as="global_messages"/>
+   <block type="core/messages" name="messages" as="messages"/>
+   <block type="core/text_list" name="content" as="content" translate="label">
+      <label>Main Content Area</label>
+   </block>
+   <block type="core/text_list" name="right" as="right" translate="label">
+      <label>Right Column</label>
+   </block>
+   <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+      <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
+         <label>Page Footer</label>
+         <action method="setElementClass">
+            <value>bottom-container</value>
+         </action>
+      </block>
+      <block type="page/switch" name="store_switcher" as="store_switcher" template="page/switch/stores.phtml"/>
+      <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml"/>
+   </block>
+   <block type="core/text_list" name="before_body_end" as="before_body_end" translate="label">
+      <label>Page Bottom</label>
+      <block type="page/html_cookieNotice" name="global_cookie_notice" as="global_cookie_notice" template="page/html/cookienotice.phtml" before="-"/>
+      <block type="core/template" name="color_variation" as="color_variation" template="page/html/color_variation.phtml"/>
+      <block type="core/template" name="em_variation_tpl" template="page/html/em_variation.phtml"/>
+      <block type="core/template" name="mobile_view" template="page/html/qrcode.phtml"/>
+   </block>
+   <block type="core/text_list" name="em_area1" translate="label">
+      <label>EM Area 01</label>
+   </block>
+   <block type="core/template" name="em_area2" translate="label" template="page/html/menu_header.phtml">
+      <label>EM Area 02</label>
+      <action method="setData">
+         <key>wrapperId</key>
+         <value>emarea2</value>
+      </action>
+      <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+         <label>Navigation Bar</label>
+         <block type="page/html_topmenu" name="tensite.catalog.topnav" template="page/html/topmenu.phtml"/>
+      </block>
+   </block>
+   <block type="core/text_list" name="em_area3" translate="label">
+      <label>EM Area 03</label>
+   </block>
+   <block type="core/text_list" name="em_area4" translate="label">
+      <label>EM Area 04</label>
+   </block>
+   <block type="core/text_list" name="em_area5" translate="label">
+      <label>EM Area 05</label>
+   </block>
+   <block type="core/text_list" name="em_area6" translate="label">
+      <label>EM Area 06</label>
+   </block>
+   <block type="core/text_list" name="em_area7" translate="label">
+      <label>EM Area 07</label>
+   </block>
+   <block type="core/text_list" name="em_area8" translate="label">
+      <label>EM Area 08</label>
+   </block>
+   <block type="core/text_list" name="em_area9" translate="label">
+      <label>EM Area 09</label>
+   </block>
+   <block type="core/text_list" name="em_area10" translate="label">
+      <label>EM Area 10</label>
+   </block>
+   <block type="core/text_list" name="em_area11" translate="label">
+      <label>EM Area 11</label>
+   </block>
+   <block type="core/text_list" name="em_area12" translate="label">
+      <label>EM Area 12</label>
+   </block>
+   <block type="core/text_list" name="em_area13" translate="label">
+      <label>EM Area 13</label>
+   </block>
+   <block type="core/text_list" name="em_area14" translate="label">
+      <label>EM Area 14</label>
+   </block>
+   <block type="core/text_list" name="em_area15" translate="label">
+      <label>EM Area 15</label>
+   </block>
+   <block type="core/text_list" name="em_area16" translate="label">
+      <label>EM Area 16</label>
+   </block>
+   <block type="core/text_list" name="em_area17" translate="label">
+      <label>EM Area 17</label>
+   </block>
+   <block type="core/text_list" name="em_area18" translate="label">
+      <label>EM Area 18</label>
+   </block>
+   <block type="core/text_list" name="em_area19" translate="label">
+      <label>EM Area 19</label>
+   </block>
+   <block type="core/text_list" name="em_area20" translate="label">
+      <label>EM Area 20</label>
+   </block>
+   <block type="core/text_list" name="em_area21" translate="label">
+      <label>EM Area 21</label>
+   </block>
+   <block type="core/text_list" name="em_area22" translate="label">
+      <label>EM Area 22</label>
+   </block>
+   <block type="core/text_list" name="em_area23" translate="label">
+      <label>EM Area 23</label>
+   </block>
+   <block type="core/text_list" name="em_area24" translate="label">
+      <label>EM Area 24</label>
+   </block>
+   <block type="core/text_list" name="em_area25" translate="label">
+      <label>EM Area 25</label>
+   </block>
+   <block type="core/text_list" name="em_area26" translate="label">
+      <label>EM Area 26</label>
+   </block>
+   <block type="core/text_list" name="em_area27" translate="label">
+      <label>EM Area 27</label>
+   </block>
+   <block type="core/text_list" name="em_area28" translate="label">
+      <label>EM Area 28</label>
+   </block>
+   <block type="core/text_list" name="em_area29" translate="label">
+      <label>EM Area 29</label>
+   </block>
+   <block type="core/text_list" name="em_area30" translate="label">
+      <label>EM Area 30</label>
+   </block>
+   <block type="core/text_list" name="em_area31" translate="label">
+      <label>EM Area 31</label>
+   </block>
+   <block type="core/text_list" name="em_area32" translate="label">
+      <label>EM Area 32</label>
+   </block>
+   <block type="core/text_list" name="em_area33" translate="label">
+      <label>EM Area 33</label>
+   </block>
+   <block type="core/text_list" name="em_area34" translate="label">
+      <label>EM Area 34</label>
+   </block>
+   <block type="core/text_list" name="em_area35" translate="label">
+      <label>EM Area 35</label>
+   </block>
+   <block type="core/text_list" name="em_area36" translate="label">
+      <label>EM Area 36</label>
+   </block>
+   <block type="core/text_list" name="em_area37" translate="label">
+      <label>EM Area 37</label>
+   </block>
+   <block type="core/text_list" name="em_area38" translate="label">
+      <label>EM Area 38</label>
+   </block>
+   <block type="core/text_list" name="em_area39" translate="label">
+      <label>EM Area 39</label>
+   </block>
+   <block type="core/text_list" name="em_area40" translate="label">
+      <label>EM Area 40</label>
+   </block>
+   <block type="core/text_list" name="em_area41" translate="label">
+      <label>EM Area 41</label>
+   </block>
+   <block type="core/text_list" name="em_area42" translate="label">
+      <label>EM Area 42</label>
+   </block>
+   <block type="core/text_list" name="em_area43" translate="label">
+      <label>EM Area 43</label>
+   </block>
+   <block type="core/text_list" name="em_area44" translate="label">
+      <label>EM Area 44</label>
+   </block>
+   <block type="core/text_list" name="em_area45" translate="label">
+      <label>EM Area 45</label>
+   </block>
+   <block type="core/text_list" name="em_area46" translate="label">
+      <label>EM Area 46</label>
+   </block>
+   <block type="core/text_list" name="em_area47" translate="label">
+      <label>EM Area 47</label>
+   </block>
+   <block type="core/text_list" name="em_area48" translate="label">
+      <label>EM Area 48</label>
+   </block>
+   <block type="core/text_list" name="em_area49" translate="label">
+      <label>EM Area 49</label>
+   </block>
+</block>
+<block type="core/profiler" output="toHtml" name="core_profiler"/>
+<reference name="head">
+   <block type="core/template" name="optional_zip_countries" as="optional_zip_countries" template="directory/js/optional_zip_countries.phtml"/>
+</reference>
+<reference name="header">
+   <block type="directory/currency" name="currency" template="directory/currency.phtml"/>
+</reference>
+<reference name="footer">
+   <block type="cms/block" name="cms_footer_links" before="footer_links">
+      <action method="setBlockId">
+         <block_id>footer_links</block_id>
+      </action>
+   </block>
+</reference>
+<reference name="header">
+   <block type="checkout/cart_sidebar" name="cart_sidebar_top" as="cart_sidebar_top" template="checkout/cart/top_sidebar.phtml">
+      <action method="addItemRender">
+         <type>simple</type>
+         <block>checkout/cart_item_renderer</block>
+         <template>checkout/cart/sidebar/top_default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>grouped</type>
+         <block>checkout/cart_item_renderer_grouped</block>
+         <template>checkout/cart/sidebar/top_default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>configurable</type>
+         <block>checkout/cart_item_renderer_configurable</block>
+         <template>checkout/cart/sidebar/top_default.phtml</template>
+      </action>
+      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+         <label>Shopping Cart Sidebar Extra Actions</label>
+      </block>
+   </block>
+   <block type="cms/block" name="galaelectronues_megamenu">
+      <action method="setBlockId">
+         <block_id>galaelectronues_megamenu</block_id>
+      </action>
+   </block>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>My Account</label>
+      <url helper="customer/getAccountUrl"/>
+      <title>My Account</title>
+      <prepare/>
+      <urlParams/>
+      <position>10</position>
+   </action>
+</reference>
+<reference name="left">
+   <block type="catalog/product_compare_sidebar" after="catalog.leftnav" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="catalog" ifconfig="catalog/seo/site_map">
+      <label>Site Map</label>
+      <url helper="catalog/map/getCategoryUrl"/>
+      <title>Site Map</title>
+   </action>
+</reference>
+<block type="catalog/product_price_template" name="catalog_product_price_template"/>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>msrp</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_item</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_item.phtml</template>
+   </action>
+   <action method="addPriceBlockType">
+      <type>msrp_noform</type>
+      <block>catalog/product_price</block>
+      <template>catalog/product/price_msrp_noform.phtml</template>
+   </action>
+</reference>
+<reference name="em_area1">
+   <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="catalogsearch" ifconfig="catalog/seo/search_terms">
+      <label>Search Terms</label>
+      <url helper="catalogsearch/getSearchTermUrl"/>
+      <title>Search Terms</title>
+   </action>
+   <action method="addLink" translate="label title" module="catalogsearch">
+      <label>Advanced Search</label>
+      <url helper="catalogsearch/getAdvancedSearchUrl"/>
+      <title>Advanced Search</title>
+   </action>
+</reference>
+<reference name="footer_links">
+   <block type="sales/guest_links" name="return_link"/>
+   <action method="addLinkBlock">
+      <blockName>return_link</blockName>
+   </action>
+</reference>
+<reference name="em_area1">
+   <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/top_sidebar.phtml" before="-">
+      <action method="addItemRender">
+         <type>simple</type>
+         <block>checkout/cart_item_renderer</block>
+         <template>checkout/cart/sidebar/default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>grouped</type>
+         <block>checkout/cart_item_renderer_grouped</block>
+         <template>checkout/cart/sidebar/default.phtml</template>
+      </action>
+      <action method="addItemRender">
+         <type>configurable</type>
+         <block>checkout/cart_item_renderer_configurable</block>
+         <template>checkout/cart/sidebar/default.phtml</template>
+      </action>
+      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+         <label>Shopping Cart Sidebar Extra Actions</label>
+      </block>
+   </block>
+</reference>
+<reference name="topCart.extra_actions">
+   <block type="paypal/express_shortcut" name="paypal.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypal/express_shortcut" name="paypal.partner.cart_sidebar.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="left">
+   <block type="poll/activePoll" name="left.poll" after="catalog.leftnav">
+      <action method="setPollTemplate">
+         <template>poll/active.phtml</template>
+         <type>poll</type>
+      </action>
+      <action method="setPollTemplate">
+         <template>poll/result.phtml</template>
+         <type>results</type>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="poll/activePoll" name="right.poll" after="catalog.leftnav">
+      <action method="setPollTemplate">
+         <template>poll/active.phtml</template>
+         <type>poll</type>
+      </action>
+      <action method="setPollTemplate">
+         <template>poll/result.phtml</template>
+         <type>results</type>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="reports/product_viewed" before="right.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml"/>
+   <block type="reports/product_compared" before="right.permanent.callout" name="right.reports.product.compared" template="reports/product_compared.phtml"/>
+</reference>
+<reference name="head" before="-">
+   <block type="googleanalytics/ga" name="google_analytics" as="google_analytics" template="googleanalytics/ga.phtml"/>
+</reference>
+<reference name="topCart.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.top_cart.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="cart_sidebar.extra_actions">
+   <block type="paypaluk/express_shortcut" name="paypaluk.partner.cart_sidebar.shortcut" template="paypal/express/shortcut.phtml"/>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" before="-" module="contacts" ifconfig="contacts/contacts/enabled">
+      <label>Contact Us</label>
+      <url>contacts</url>
+      <title>Contact Us</title>
+      <prepare/>
+      <urlParams/>
+      <position>1</position>
+   </action>
+</reference>
+<reference name="footer_links">
+   <action method="addLink" translate="label title" module="rss" ifconfig="rss/config/active">
+      <label>RSS</label>
+      <url>rss</url>
+      <title>RSS</title>
+      <prepare>true</prepare>
+      <urlParams/>
+      <position/>
+      <li/>
+      <a>class=&quot;link-rss&quot;</a>
+   </action>
+</reference>
+<block type="rss/list" name="head_rss" ifconfig="rss/config/active"/>
+<reference name="cart_sidebar">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/cart/sidebar/default.phtml</template>
+   </action>
+</reference>
+<reference name="wishlist_sidebar">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="catalog_product_price_template">
+   <action method="addPriceBlockType">
+      <type>bundle</type>
+      <block>bundle/catalog_product_price</block>
+      <template>bundle/catalog/product/price.phtml</template>
+   </action>
+</reference>
+<reference name="footer">
+   <block type="feedback/feedback" name="popuphtml1" as="popuphtml" template="feedback/popup_html.phtml">
+      <action method="addItem">
+         <type>skin_css</type>
+         <name>feedback/css/popup.css</name>
+         <params/>
+      </action>
+      <action method="addItem">
+         <type>skin_js</type>
+         <name>feedback/js/popup.js</name>
+      </action>
+   </block>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>em/ajaxcart/css/em_ajaxcart.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <script>varien/product.js</script>
+   </action>
+   <action method="addJs">
+      <script>varien/configurable.js</script>
+   </action>
+   <action method="addJs">
+      <script>calendar/calendar.js</script>
+   </action>
+   <action method="addJs">
+      <script>calendar/calendar-setup.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/bundle.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em/jquery.form.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em/ajaxcart/js/lightbox.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em/ajaxcart/js/em_ajaxcart.js</name>
+   </action>
+   <block type="core/template" name="em_ajaxcart_head" template="em_ajaxcart/em_head.phtml"/>
+</reference>
+<reference name="before_body_end">
+   <block type="core/template" name="ajax.cart" template="em_ajaxcart/contanier.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <stylesheet>em_megamenupro/css/menu.css</stylesheet>
+   </action>
+   <action method="addJs">
+      <script>em/jquery-1.8.3.min.js</script>
+   </action>
+   <action method="addJs">
+      <script>em/jquery.ba-hashchange.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_megamenupro/js/menu.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>em_megamenupro/js/ie7.js</name>
+      <params/>
+      <if>lt IE 8</if>
+   </action>
+</reference>
+<reference name="head">
+   <block type="productlabels/css" name="labels.css"/>
+   <action method="addCss">
+      <stylesheet>css/em_productlabels.css</stylesheet>
+   </action>
+</reference>
+<reference name="head">
+   <block type="page/html" name="top.Js" as="topJs" template="em_quickshop/page/html/jshead.phtml"/>
+   <action method="addCss">
+      <stylesheet>css/em_quickshop.css</stylesheet>
+   </action>
+   <action method="addCss">
+      <stylesheet>css/fancybox/jquery.fancybox.css</stylesheet>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/fancybox/jquery.fancybox.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/fancybox/jquery.mousewheel-3.0.6.pack.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/em_quickshop.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.jcarousel.js</name>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery.touchwipe.1.1.1.js</name>
+   </action>
+   <action method="addCss">
+      <stylesheet>sliderwidget/jcarousel.css</stylesheet>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <name>slideshowwidget/css/nivo.css</name>
+   </action>
+   <action method="addJs">
+      <script>em/jquery-1.8.3.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>slideshowwidget/js/jquery.nivo.slider.js</name>
+   </action>
+</reference>
+<reference name="head">
+   <action method="addCss">
+      <name>emtabs/css/emtabs.css</name>
+   </action>
+   <action method="addJs">
+      <script>em/jquery-1.8.3.min.js</script>
+   </action>
+   <action method="addItem">
+      <type>skin_js</type>
+      <name>emtabs/js/emtabs.js</name>
+   </action>
+</reference>
+<reference name="top.container">
+   <block type="cmswidget/widget_block" name="c4c1b927caa239bdd279937e2a744068">
+      <action method="setData">
+         <name>block_id</name>
+         <value>7</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area14">
+   <block type="cmswidget/widget_block" name="8b9c1462ee8daba1d597bd7cd0ef5c63">
+      <action method="setData">
+         <name>block_id</name>
+         <value>16</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>footer-information</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area15">
+   <block type="cmswidget/widget_block" name="16ad3cee94d8fe516f61b1fb8bbda11e">
+      <action method="setData">
+         <name>block_id</name>
+         <value>18</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>footer-right</value>
+      </action>
+   </block>
+</reference>
+<reference name="top.menu">
+   <block type="megamenupro/megamenupro" name="d540b5567a5a1044092a6e346419e320">
+      <action method="setData">
+         <name>menu</name>
+         <value>2</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area13">
+   <block type="cmswidget/widget_block" name="33a345d68d3673f9d4317b1aab22ed75">
+      <action method="setData">
+         <name>block_id</name>
+         <value>15</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>footer-text</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area14">
+   <block type="cmswidget/widget_block" name="ef8d3f86f7ed602a7f6b70c1d8c7bbd2">
+      <action method="setData">
+         <name>block_id</name>
+         <value>17</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>newsletter</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area16">
+   <block type="cmswidget/widget_block" name="d724909b455f8ab3e6575798ca89b242">
+      <action method="setData">
+         <name>block_id</name>
+         <value>19</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>payment</value>
+      </action>
+   </block>
+</reference>
+<label>CMS Pages (All)</label>
+<reference name="content">
+   <block type="core/template" name="page_content_heading" template="cms/content_heading.phtml"/>
+   <block type="page/html_wrapper" name="cms.wrapper" translate="label">
+      <label>CMS Content Wrapper</label>
+      <action method="setElementClass">
+         <value>std</value>
+      </action>
+      <block type="cms/page" name="cms_page"/>
+   </block>
+</reference>
+<label>CMS Home Page</label>
+<reference name="left">
+   <remove name="tags_popular"/>
+   <remove name="left.poll"/>
+   <remove name="catalog.compare.sidebar"/>
+</reference>
+<reference name="right">
+   <block type="paypal/logo" name="paypal.partner.right.logo" template="paypal/partner/logo.phtml"/>
+</reference>
+<reference name="top.container">
+   <block type="paypal/bml_banners" name="bml.center.logo" template="paypal/bml.phtml">
+      <action method="setSection">
+         <section>homepage</section>
+      </action>
+      <action method="setPosition">
+         <position>0</position>
+      </action>
+   </block>
+</reference>
+<reference name="right">
+   <block type="paypal/bml_banners" name="bml.right.logo" template="paypal/bml.phtml">
+      <action method="setSection">
+         <section>homepage</section>
+      </action>
+      <action method="setPosition">
+         <position>1</position>
+      </action>
+   </block>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js_css</type>
+      <name>calendar/calendar-win2k-1.css</name>
+      <params/>
+   </action>
+   <action method="addItem">
+      <type>js</type>
+      <name>calendar/calendar.js</name>
+   </action>
+   <action method="addItem">
+      <type>js</type>
+      <name>calendar/calendar-setup.js</name>
+   </action>
+</reference>
+<reference name="content">
+   <block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+</reference>
+<update handle="sidebarsearch_calendar"/>
+<reference name="left">
+   <block type="sidebarsearch/advanced_sidebar" name="sidebarsearch_advanced_sidebar" template="sidebarsearch/advanced/sidebar.phtml" before="-"/>
+</reference>
+<reference name="em_area3">
+   <block type="slideshowwidget/create" name="2c638919ce89ecac157e3d7f4e5e0ae3">
+      <action method="setData">
+         <name>text1</name>
+         <value>&lt;span class=&quot;slideshow-more&quot;&gt;conseq magna&lt;/span&gt; &lt;span class=&quot;slideshow-des&quot;&gt;Conseq magna eget ante hendrerit sed sollicitudin velit ullamcorper. Aenean enim sapie nulla vehicula tellus id libero dignissim &lt;/span&gt;&lt;div class=&quot;discover-now&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;</value>
+      </action>
+      <action method="setData">
+         <name>url1</name>
+         <value>furniture.html</value>
+      </action>
+      <action method="setData">
+         <name>image1</name>
+         <value>slide1.png</value>
+      </action>
+      <action method="setData">
+         <name>text2</name>
+         <value>&lt;span class=&quot;slideshow-more&quot;&gt;conseq magna&lt;/span&gt; &lt;span class=&quot;slideshow-des&quot;&gt;Conseq magna eget ante hendrerit sed sollicitudin velit ullamcorper. Aenean enim sapie nulla vehicula tellus id libero dignissim &lt;/span&gt;&lt;div class=&quot;discover-now&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;</value>
+      </action>
+      <action method="setData">
+         <name>url2</name>
+         <value>electronics.html</value>
+      </action>
+      <action method="setData">
+         <name>image2</name>
+         <value>slide2.png</value>
+      </action>
+      <action method="setData">
+         <name>text3</name>
+         <value>&lt;span class=&quot;slideshow-more&quot;&gt;conseq magna&lt;/span&gt; &lt;span class=&quot;slideshow-des&quot;&gt;Conseq magna eget ante hendrerit sed sollicitudin velit ullamcorper. Aenean enim sapie nulla vehicula tellus id libero dignissim &lt;/span&gt;&lt;div class=&quot;discover-now&quot;&gt;&lt;a href=&quot;#&quot;&gt;shop now&lt;/a&gt;&lt;/div&gt;</value>
+      </action>
+      <action method="setData">
+         <name>url3</name>
+         <value>apparel.html</value>
+      </action>
+      <action method="setData">
+         <name>image3</name>
+         <value>slide3.png</value>
+      </action>
+      <action method="setData">
+         <name>effect</name>
+         <value>random</value>
+      </action>
+      <action method="setData">
+         <name>slices</name>
+         <value>15</value>
+      </action>
+      <action method="setData">
+         <name>boxcols</name>
+         <value>8</value>
+      </action>
+      <action method="setData">
+         <name>boxrows</name>
+         <value>4</value>
+      </action>
+      <action method="setData">
+         <name>animspeed</name>
+         <value>500</value>
+      </action>
+      <action method="setData">
+         <name>pausetime</name>
+         <value>5000</value>
+      </action>
+      <action method="setData">
+         <name>startslide</name>
+         <value>0</value>
+      </action>
+      <action method="setData">
+         <name>directionnav</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>controlnav</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>controlnavthumbs</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>pauseonhover</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>prevtext</name>
+         <value>Prev</value>
+      </action>
+      <action method="setData">
+         <name>nexttext</name>
+         <value>Next</value>
+      </action>
+      <action method="setData">
+         <name>randomstart</name>
+         <value>true</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area10">
+   <block type="dynamicproducts/dynamicproducts" name="5ce60ae8e7e8cef5ed3a50c13087ab4e">
+      <action method="setData">
+         <name>order_by</name>
+         <value>name asc</value>
+      </action>
+      <action method="setData">
+         <name>new_category</name>
+         <value>10</value>
+      </action>
+      <action method="setData">
+         <name>featured_choose</name>
+         <value>em_featured</value>
+      </action>
+      <action method="setData">
+         <name>limit_count</name>
+         <value>1</value>
+      </action>
+      <action method="setData">
+         <name>column_count</name>
+         <value>1</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box1</value>
+      </action>
+      <action method="setData">
+         <name>frontend_title</name>
+         <value>BMW Car</value>
+      </action>
+      <action method="setData">
+         <name>frontend_description</name>
+         <value>&lt;a class=&quot;free-ship&quot; href=&quot;#&quot;&gt;Free shipping and returns&lt;/a&gt;</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_width</name>
+         <value>238</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_height</name>
+         <value>238</value>
+      </action>
+      <action method="setData">
+         <name>show_product_name</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_thumbnail</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>alt_img</name>
+         <value>thumbnail</value>
+      </action>
+      <action method="setData">
+         <name>show_description</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_price</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_reviews</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_addtocart</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_addto</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_label</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>choose_template</name>
+         <value>em_featured_products/featured_grid.phtml</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area10">
+   <block type="sliderwidget/slide" name="9934976fb8d1dd91cf05eb1cd12ef9e6">
+      <action method="setData">
+         <name>instance</name>
+         <value>15</value>
+      </action>
+      <action method="setData">
+         <name>direction</name>
+         <value>1</value>
+      </action>
+      <action method="setData">
+         <name>container</name>
+         <value>UL</value>
+      </action>
+      <action method="setData">
+         <name>auto_sliding</name>
+         <value>0</value>
+      </action>
+      <action method="setData">
+         <name>circular</name>
+         <value>1</value>
+      </action>
+      <action method="setData">
+         <name>items_per_slide</name>
+         <value>3</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area7">
+   <block type="sliderwidget/slide" name="69d90c042782183b0fb4c561315e0829">
+      <action method="setData">
+         <name>instance</name>
+         <value>4</value>
+      </action>
+      <action method="setData">
+         <name>direction</name>
+         <value>0</value>
+      </action>
+      <action method="setData">
+         <name>container</name>
+         <value>.products-grid</value>
+      </action>
+      <action method="setData">
+         <name>auto_sliding</name>
+         <value>0</value>
+      </action>
+      <action method="setData">
+         <name>circular</name>
+         <value>0</value>
+      </action>
+      <action method="setData">
+         <name>items_per_slide</name>
+         <value>3</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area4">
+   <block type="cmswidget/widget_block" name="5782092ab80116f99d474702776d9396">
+      <action method="setData">
+         <name>block_id</name>
+         <value>6</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area7">
+   <block type="dynamicproducts/dynamicproducts" name="de1f24094aa89fa83184901c38ab1c43">
+      <action method="setData">
+         <name>order_by</name>
+         <value>name asc</value>
+      </action>
+      <action method="setData">
+         <name>new_category</name>
+         <value>13</value>
+      </action>
+      <action method="setData">
+         <name>featured_choose</name>
+         <value>em_featured</value>
+      </action>
+      <action method="setData">
+         <name>limit_count</name>
+         <value>4</value>
+      </action>
+      <action method="setData">
+         <name>column_count</name>
+         <value>7</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box-top</value>
+      </action>
+      <action method="setData">
+         <name>frontend_title</name>
+         <value>Toyota</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_width</name>
+         <value>157</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_height</name>
+         <value>157</value>
+      </action>
+      <action method="setData">
+         <name>show_product_name</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_thumbnail</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>alt_img</name>
+         <value>thumbnail</value>
+      </action>
+      <action method="setData">
+         <name>show_description</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_price</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_reviews</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_addtocart</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_addto</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_label</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>choose_template</name>
+         <value>em_featured_products/featured_grid.phtml</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area10">
+   <block type="dynamicproducts/dynamicproducts" name="6fea72ce55d22dd2c074a60f7230f1b5">
+      <action method="setData">
+         <name>order_by</name>
+         <value>name asc</value>
+      </action>
+      <action method="setData">
+         <name>new_category</name>
+         <value>13</value>
+      </action>
+      <action method="setData">
+         <name>featured_choose</name>
+         <value>em_featured</value>
+      </action>
+      <action method="setData">
+         <name>limit_count</name>
+         <value>2</value>
+      </action>
+      <action method="setData">
+         <name>column_count</name>
+         <value>1</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box1 box-tv-video</value>
+      </action>
+      <action method="setData">
+         <name>frontend_title</name>
+         <value>Toyota Featured</value>
+      </action>
+      <action method="setData">
+         <name>frontend_description</name>
+         <value>&lt;a class=&quot;free-ship&quot; href=&quot;#&quot;&gt;Free shipping and returns&lt;/a&gt;</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_width</name>
+         <value>238</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_height</name>
+         <value>238</value>
+      </action>
+      <action method="setData">
+         <name>show_product_name</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_thumbnail</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>alt_img</name>
+         <value>thumbnail</value>
+      </action>
+      <action method="setData">
+         <name>show_description</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_price</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_reviews</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_addtocart</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_addto</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_label</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>choose_template</name>
+         <value>em_featured_products/featured_grid.phtml</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area7">
+   <block type="dynamicproducts/dynamicproducts" name="2e7f830592ec7e8b7c95ddc069c4f2a0">
+      <action method="setData">
+         <name>order_by</name>
+         <value>name asc</value>
+      </action>
+      <action method="setData">
+         <name>new_category</name>
+         <value>20</value>
+      </action>
+      <action method="setData">
+         <name>featured_choose</name>
+         <value>em_featured</value>
+      </action>
+      <action method="setData">
+         <name>limit_count</name>
+         <value>12</value>
+      </action>
+      <action method="setData">
+         <name>column_count</name>
+         <value>99</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box-top</value>
+      </action>
+      <action method="setData">
+         <name>frontend_title</name>
+         <value>Volvo</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_width</name>
+         <value>157</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_height</name>
+         <value>157</value>
+      </action>
+      <action method="setData">
+         <name>show_product_name</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_thumbnail</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>alt_img</name>
+         <value>thumbnail</value>
+      </action>
+      <action method="setData">
+         <name>show_description</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_price</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_reviews</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_addtocart</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_addto</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_label</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>choose_template</name>
+         <value>em_featured_products/featured_grid.phtml</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area10">
+   <block type="cmswidget/widget_block" name="0103dd26aadb458326ad4c5c21e452c1">
+      <action method="setData">
+         <name>block_id</name>
+         <value>20</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>home-banner-left</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area7">
+   <block type="cmswidget/widget_block" name="a152e2050ea38f08eeb0e78e363392b7">
+      <action method="setData">
+         <name>block_id</name>
+         <value>11</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box-bottom</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area7">
+   <block type="dynamicproducts/dynamicproducts" name="e458a54a4debf74d54d6e27576ca1f71">
+      <action method="setData">
+         <name>order_by</name>
+         <value>name asc</value>
+      </action>
+      <action method="setData">
+         <name>new_category</name>
+         <value>10</value>
+      </action>
+      <action method="setData">
+         <name>featured_choose</name>
+         <value>em_featured</value>
+      </action>
+      <action method="setData">
+         <name>limit_count</name>
+         <value>4</value>
+      </action>
+      <action method="setData">
+         <name>column_count</name>
+         <value>4</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box-top</value>
+      </action>
+      <action method="setData">
+         <name>frontend_title</name>
+         <value>BMW</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_width</name>
+         <value>157</value>
+      </action>
+      <action method="setData">
+         <name>thumbnail_height</name>
+         <value>157</value>
+      </action>
+      <action method="setData">
+         <name>show_product_name</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_thumbnail</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>alt_img</name>
+         <value>thumbnail</value>
+      </action>
+      <action method="setData">
+         <name>show_description</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_price</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_reviews</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>show_addtocart</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_addto</name>
+         <value>false</value>
+      </action>
+      <action method="setData">
+         <name>show_label</name>
+         <value>true</value>
+      </action>
+      <action method="setData">
+         <name>choose_template</name>
+         <value>em_featured_products/featured_grid.phtml</value>
+      </action>
+   </block>
+</reference>
+<reference name="em_area7">
+   <block type="cmswidget/widget_block" name="3dc207aa85c08d223e5fdfc3abfda7a2">
+      <action method="setData">
+         <name>block_id</name>
+         <value>14</value>
+      </action>
+      <action method="setData">
+         <name>custom_class</name>
+         <value>box-bottom</value>
+      </action>
+   </block>
+</reference>
+<label>All Two-Column Layout Pages (Left Column)</label>
+<reference name="root">
+   <action method="setTemplate">
+      <template>page/2columns-left.phtml</template>
+   </action>
+   <action method="setIsHandle">
+      <applied>1</applied>
+   </action>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>Log In</label>
+      <url helper="customer/getLoginUrl"/>
+      <title>Log In</title>
+      <prepare/>
+      <urlParams/>
+      <position>100</position>
+   </action>
+   <action method="addLink" translate="label title" module="customer">
+      <label>Sign Up</label>
+      <url helper="customer/getRegisterUrl"/>
+      <title>Sign Up</title>
+      <prepare/>
+      <urlParams/>
+      <position>110</position>
+   </action>
+</reference>
+<remove name="reorder"/>
+<reference name="right">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>
